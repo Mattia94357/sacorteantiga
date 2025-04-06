@@ -70,10 +70,20 @@ p {
   height: 100vh;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position:center;
+  background-position: center;
   background-size: cover;
   background-image: url(imagesnew/masua\ immagine\ \(1\).jpg);
 }
+
+@media (max-width: 768px) {
+  .navimage {
+    height: 50vh; /* Adjust the height for small screens */
+    background-attachment: scroll; /* Change attachment to scroll for better performance on small screens */
+  }
+}
+
+
+
 
 .leisureimg { 
   height: 300px;
