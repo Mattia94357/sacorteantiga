@@ -156,3 +156,95 @@ p {
 
 
 /* utilities end */
+
+
+
+/* Button Styling */
+.partner-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    border: none;
+    text-decoration: none;
+}
+
+.partner-button.booking {
+    background-color: #0071bb;
+    color: white;
+}
+
+.partner-button.booking:hover {
+    background-color: #005b8a;
+    transform: scale(1.05);
+}
+
+.partner-button.airbnb {
+    background-color: #FF5A5F;
+    color: white;
+}
+
+.partner-button.airbnb:hover {
+    background-color: #e04c4b;
+    transform: scale(1.05);
+}
+
+.partner-button img {
+    vertical-align: middle;
+    max-width: 30px;
+    margin-right: 10px;
+}
+
+/* WhatsApp Button Styling */
+.whatsapp-button {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #25D366;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    border: none;
+    text-decoration: none;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+    transform: scale(1.05);
+}
+
+.whatsapp-button img {
+    vertical-align: middle;
+    max-width: 25px;
+    margin-right: 10px;
+}
+
+/* Gmail Button Styling */
+.gmail-button {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #DB4437;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    border: none;
+    text-decoration: none;
+}
+
+.gmail-button:hover {
+    background-color: #C1351D;
+    transform: scale(1.05);
+}
+
+.gmail-button img {
+    vertical-align: middle;
+    max-width: 25px;
+    margin-right: 10px;
+}
