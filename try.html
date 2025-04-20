@@ -1,289 +1,207 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gallery</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-    <link rel="stylesheet" href="Styles.css">
-    <style>
-      .galleryimg {
-        width: 100%;
-        height: auto;
-        margin-bottom: 0.75rem;
-        border-radius: 8px;
-        transition: transform 0.3s ease;
-      }
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="Styles.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
 
-      .galleryimg:hover {
-        transform: scale(1.02);
-      }
+    .gmail-button {
+      background-color: #f4a261;
+      border: none;
+      color: white;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 140px;
+      transition: background-color 0.3s ease;
+    }
 
-      .masonry {
-        column-count: 3;
-        column-gap: 1rem;
-      }
+    .gmail-button img {
+      margin-right: 8px;
+      width: 20px;
+    }
 
-      .masonry .masonry-item {
-        break-inside: avoid;
-        margin-bottom: 1rem;
-      }
+    .gmail-button:hover {
+      background-color: #e07b39;
+      color: white;
+      text-decoration: none;
+    }
 
-      @media (max-width: 992px) {
-        .masonry {
-          column-count: 2;
-        }
-      }
+    .partner-button {
+      padding: 0.5rem 1rem;
+      min-width: 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background-color 0.3s ease;
+    }
 
-      @media (max-width: 576px) {
-        .masonry {
-          column-count: 1;
-        }
-      }
+    .partner-button img {
+      margin-right: 8px;
+      width: 20px;
+      height: 20px;
+    }
 
-      .section-title {
-        font-size: 2rem;
-        color: #a59451;
-        text-align: center;
-        margin: 30px 0;
-      }
+    .partner-button.booking {
+      background-color: #0071c2;
+      color: white;
+    }
 
-      .category-title {
-        font-size: 1.5rem;
-        color: #555;
-        text-align: center;
-        margin: 20px 0;
-      }
-    </style>
-  </head>
-  <body>
+    .partner-button.airbnb {
+      background-color: #ff5a5f;
+      color: white;
+    }
 
-    <!-- Navbar -->
-    <div class="container-fluid" style="background-color: rgba(98, 98, 102, 0.5);">
-      <nav class="navbar navbar-expand-md">
-        <div class="container m-2 px-4 d-flex justify-content-center">
-          <a href="Home.html"><img class="mx-5" src="/imagesnew/logo new 75 px.jpg" width="70px" alt=""></a>
-          <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle-navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+    .partner-button.booking:hover {
+      background-color: #005999;
+      color: white;
+    }
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item"><a href="index.html" class="nav-link active text-light">Sa Corte Antiga</a></li>
-              <li class="nav-item"><a href="Accomodation.html" class="nav-link active text-light">Prenota ra</a></li>
-              <li class="nav-item"><a href="Leisure.html" class="nav-link active text-light">Tempo Libero</a></li>
-              <li class="nav-item"><a href="Gallery.html" class="nav-link active text-light">Galleria</a></li>
-              <li class="nav-item"><a href="Contact.html" class="nav-link active text-light">Contattaci</a></li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Cerca</button>
-            </form>
-          </div>
+    .partner-button.airbnb:hover {
+      background-color: #e24e53;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <div class="container-fluid" style="background-color: rgba(98, 98, 102, 0.5);">
+    <nav class="navbar navbar-expand-md">
+      <div class="container m-2 px-4 d-flex justify-content-center">
+        <a href="Home.html"><img class="mx-5" src="/imagesnew/logo new 75 px.jpg" width="90px" height="90px" alt=""></a>
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle-navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a href="index.html" class="nav-link active text-light">Sa Corte Antiga</a></li>
+            <li class="nav-item"><a href="Accomodation.html" class="nav-link active text-light">Prenota Ora</a></li>
+            <li class="nav-item"><a href="Leisure.html" class="nav-link active text-light">Tempo Libero</a></li>
+            <li class="nav-item"><a href="Gallery.html" class="nav-link active text-light">Galleria</a></li>
+            <li class="nav-item"><a href="Contact.html" class="nav-link active text-light">Contattaci</a></li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Cerca</button>
+          </form>
         </div>
-      </nav>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Intro -->
+  <div class="container my-5">
+    <div class="row d-flex justify-content-center align-items-center" style="background-color: seashell;">
+      <div class="col-sm-5 p-3 mb-3">
+        <h2 style="color: #a59451" class="display-3">Contattaci</h2>
+        <hr class="hr2">
+      </div>
+      <div class="col-sm-5 m-5">
+        <p class="lead">Contattaci per qualsiasi Domanda oppure visita e prenota con i nostri siti partner</p>
+        <div class="d-flex justify-content-center align-items-center">
+          <a href="#"><img src="/imagesnew/Booking-Logo.png" alt="" width="150px"></a>
+        </div>
+        <hr>
+        <div class="d-flex justify-content-center align-items-center">
+          <img src="/imagesnew/Booking.com score.png" alt="" class="m-3" width="50">
+        </div>
+      </div>
     </div>
+  </div>
 
-    <!-- Galleria Intro -->
-    <div class="container my-5">
-      <div class="row justify-content-center align-items-center px-3 py-4 rounded-4 shadow-sm" style="background-color: #fdf6ec;">
-        <div class="col-md-5 text-center text-md-start mb-4 mb-md-0">
-          <h2 class="display-4" style="color: #a59451;">
-            <i class="bi bi-ICON-NAME me-2"></i> Prenota ora
-          </h2>
-          <hr style="border: 1px solid #a59451; width: 60px;">
-        </div>
-        <div class="col-md-6">
-          <p class="lead text-muted text-center text-md-start">
-            <p class="lead">La tua indimenticabile vacanza in Sardegna: fascino tradizionale, comfort moderno e la base perfetta per esplorare l'isola</p>
+  <!-- Info + Buttons -->
+  <div class="container my-5">
+    <div class="row g-4">
+      <div class="col-md-6">
+        <img src="imagesnew/grotta sardegna.jpg" alt="grotta sardegna" class="img-fluid rounded shadow-sm w-100">
+      </div>
+      <div class="col-md-6 d-flex align-items-center">
+        <div class="text-center w-100">
+          <p class="p-3">
+            La nostra residenza si trova lungo la splendida costa sud-occidentale della Sardegna, immersa in un paesaggio mediterraneo unico. A soli 5 km, potrete godere di uno dei tratti di spiaggia più lunghi dell'isola, mentre l'Aeroporto Internazionale di Cagliari dista appena 45 minuti in auto. Per qualsiasi domanda o richiesta di prenotazione, non esitate a contattarci ai numeri +393403606054 e +393475022636, oppure all'email brunofonnesu@live.it
           </p>
+          <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 mt-3">
+            <button onclick="whatsappButton()" class="whatsapp-button btn btn-success d-flex align-items-center">
+              <img src="/imagesnew/whatsapp.png" alt="WhatsApp" width="20" class="me-2"> WhatsApp
+            </button>
+            <a href="mailto:brunofonnesu@live.it" class="gmail-button d-flex align-items-center">
+              <img src="/imagesnew/gmail-new-logo-google-mail-google-workspace.jpg" alt="Gmail"> Gmail
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  
-
-    <!-- House Gallery Section -->
-    <div class="container my-5">
-      <div class="section-title">La Casa </div>
-      <div class="masonry">
-        <div class="masonry-item"><a href="/images sa corte antiga/bedroom1.jpg" data-lightbox="gallery"><img src="/images sa corte antiga/bedroom1.jpg" class="galleryimg" alt=""></a></div>
-        <div class="masonry-item"><a href="/images sa corte antiga/bedroom2.jpg" data-lightbox="gallery"><img src="/images sa corte antiga/bedroom2.jpg" class="galleryimg" alt=""></a></div>
-        <div class="masonry-item"><a href="/images sa corte antiga/bathroom2.jpg" data-lightbox="gallery"><img src="/images sa corte antiga/bathroom2.jpg" class="galleryimg" alt=""></a></div>
-        <div class="masonry-item"><a href="/images sa corte antiga/diningarea.jpg" data-lightbox="gallery"><img src="/images sa corte antiga/diningarea.jpg" class="galleryimg" alt=""></a></div>
-        <div class="masonry-item"><a href="/images sa corte antiga/kitchen.jpg" data-lightbox="gallery"><img src="/images sa corte antiga/kitchen.jpg" class="galleryimg" alt=""></a></div>
-        <div class="masonry-item"><a href="/images sa corte antiga/alfresco.jpg" data-lightbox="gallery"><img src="/images sa corte antiga/alfresco.jpg" class="galleryimg" alt=""></a></div>
-        <div class="masonry-item"><a href="/imagesnew/sacorteatnigaentrance.jpg" data-lightbox="gallery"><img src="/imagesnew/sacorteatnigaentrance.jpg" class="galleryimg" alt=""></a></div>
-        <div class="masonry-item"><a href="/imagesnew/bbq.jpg" data-lightbox="gallery"><img src="/imagesnew/bbq.jpg" class="galleryimg" alt=""></a></div>
-        <div class="masonry-item"><a href="/imagesnew/entrance.jpg" data-lightbox="gallery"><img src="/imagesnew/entrance.jpg" class="galleryimg" alt=""></a></div>
-
-      </div>
-    </div>
-
-    <!-- Territory Gallery Section -->
-    <div class="container my-5">
-      <div class="section-title">Il Territorio</div>
-      <div class="masonry">
-        <div class="masonry-item"><a href="/imagesnew/Bruno Pan di zucchero (1).jpg" data-lightbox="gallery"><img src="/imagesnew/Bruno Pan di zucchero (1).jpg" class="galleryimg" alt=""></a></div>
-        <div class="masonry-item"><a href="/imagesnew/masua immagine (1).jpg" data-lightbox="gallery"><img src="/imagesnew/masua immagine (1).jpg" class="galleryimg" alt=""></a></div>
-        <div class="masonry-item"><a href="/imagesnew/matteo-pilleri-n2JI6axNhuU-unsplash.jpg" data-lightbox="gallery"><img src="/imagesnew/matteo-pilleri-n2JI6axNhuU-unsplash.jpg" class="galleryimg" alt=""></a></div>
-
-        <div class="masonry-item"><a href="/imagesnew/portoflavia.jpg" data-lightbox="gallery"><img src="/imagesnew/portoflavia.jpg" class="galleryimg" alt=""></a></div>
-        <div class="masonry-item"><a href="/imagesnew/chloe-frost-smith-CAEKQsss1bQ-unsplash.jpg" data-lightbox="gallery"><img src="/imagesnew/chloe-frost-smith-CAEKQsss1bQ-unsplash.jpg" class="galleryimg" alt=""></a></div>
-        <div class="masonry-item"><a href="/imagesnew/grotta sardegna.jpg" data-lightbox="gallery"><img src="/imagesnew/grotta sardegna.jpg" class="galleryimg" alt=""></a></div>
-        <div class="masonry-item"><a href="/imagesnew/pandizuccherosideview.jpg" data-lightbox="gallery"><img src="/imagesnew/pandizuccherosideview.jpg" class="galleryimg" alt=""></a></div>
-        <div class="masonry-item"><a href="/imagesnew/rockclimbingblusea.jpg" data-lightbox="gallery"><img src="/imagesnew/rockclimbingblusea.jpg" class="galleryimg" alt=""></a></div>
-        <div class="masonry-item"><a href="/imagesnew/bernhard-3bqjMxLYpnQ-unsplash.jpg" data-lightbox="gallery"><img src="/imagesnew/bernhard-3bqjMxLYpnQ-unsplash.jpg" class="galleryimg" alt=""></a></div>
-
-      </div>
-    </div>
-
-    <!-- Footer -->
-    <div class="container-fluid bg-dark">
-      <div class="container">
-        <footer class="py-5">
-          <div class="row justify-content-center">
-            <div class="col-5 col-md mb-3 d-flex justify-content-center">
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2 text-light"><a href="index.html" class="nav-link p-0">Sa Corte Antiga</a></li>
-                <li class="nav-item mb-2 text-light"><a href="Accomodation.html" class="nav-link p-0">Alloggio</a></li>
-                <li class="nav-item mb-2 text-light"><a href="Leisure.html" class="nav-link p-0">Tempo Libero</a></li>
-              </ul>
-            </div>
-            <div class="col-5 col-md mb-3 d-flex justify-content-center">
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2 text-light"><a href="Contact.html" class="nav-link p-0">Contattaci</a></li>
-                <li class="nav-item mb-2 text-light"><a href="Gallery.html" class="nav-link p-0">Galleria</a></li>
-                <li class="nav-item mb-2 text-light"><a href="Accomodation.html" class="nav-link p-0">Modulo di Prenotazione</a></li>
-              </ul>
-            </div>
-          </div>
-          <hr class="text-light">
-          <div class="col m-3 p-3 d-flex justify-content-center">
-            <img src="/imagesnew/airbnb.jpg" alt="" style="height: 70px; width: 70px;" class="m-3">
-            <img src="/imagesnew/Booking-Logo.png" alt="" style="height: 70px; max-width: 70px;" class="m-3">
-          </div>
-          <div class="d-flex flex-column flex-sm-row justify-content-center py-3 my-4">
-            <p class="text-light fw-light">Copyright &copy; 2024 Sa Corte Antiga Inc. Tutti i diritti riservati</p>
-          </div>
-        </footer>
-      </div>
-    </div>
-
-
-
-  <div class="divider2">
-
   </div>
 
-  <!-- Page Intro -->
-<div class="container my-5">
-  <div class="row justify-content-center align-items-center p-4 rounded-4 shadow-sm" style="background-color: #fefaf3;">
-    <div class="col-md-5 text-center text-md-start mb-4 mb-md-0">
-      <h2 class="display-4" style="color: #a59451;">
-        <i class="bi bi-calendar-check-fill me-2"></i> Prenota ora
-      </h2>
-      <hr style="border: 1px solid #a59451; width: 60px;">
-    </div>
-    <div class="col-md-6 text-center text-md-start">
-      <p class="lead text-muted">
-        La tua indimenticabile vacanza in Sardegna: fascino tradizionale, comfort moderno e la base perfetta per esplorare l'isola.
-      </p>
+  <!-- Partner Sites -->
+  <div class="container my-5">
+    <div class="text-center">
+      <h2 class="mb-4">Prenota con i Nostri Siti Partner</h2>
+      <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
+        <a href="https://www.booking.com" class="partner-button booking d-flex align-items-center justify-content-center">
+          <img src="/imagesnew/Booking-Logo.png" alt="Booking.com"> Booking.com
+        </a>
+        <a href="https://www.airbnb.com" class="partner-button airbnb d-flex align-items-center justify-content-center">
+          <img src="/imagesnew/airbnb.jpg" alt="Airbnb"> Airbnb
+        </a>
+      </div>
     </div>
   </div>
-</div>
 
-<!-- Booking Form -->
-<div class="container my-5">
-  <div class="card shadow-lg border-0 p-4">
-    <h3 class="text-center mb-4">Modulo di Prenotazione</h3>
-    <hr class="mb-4" style="border: 1px solid #a59451; width: 80px; margin: auto;">
-
-    <form>
-      <div class="row mb-3">
-        <div class="col-md-3">
-          <label for="title" class="form-label">Titolo</label>
-          <select id="title" class="form-select">
-            <option>MR</option>
-            <option>MS</option>
-            <option>MRS</option>
-          </select>
+  <!-- Footer (Unchanged) -->
+  <div class="container-fluid bg-dark">
+    <div class="container">
+      <footer class="py-5">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-5 col-md mb-3 d-flex justify-content-center">
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2 text-light"><a href="index.html" class="nav-link p-0">Sa Corte Antiga</a></li>
+              <li class="nav-item mb-2 text-light"><a href="Accomodation.html" class="nav-link p-0">Alloggio</a></li>
+              <li class="nav-item mb-2 text-light"><a href="Leisure.html" class="nav-link p-0">Tempo Libero</a></li>
+            </ul>
+          </div>
+          <div class="col-5 col-md mb-3 d-flex justify-content-center">
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2 text-light"><a href="Contact.html" class="nav-link p-0">Contattaci</a></li>
+              <li class="nav-item mb-2 text-light"><a href="Gallery.html" class="nav-link p-0">Galleria</a></li>
+              <li class="nav-item mb-2 text-light"><a href="Accomodation.html" class="nav-link p-0">Modulo di Prenotazione</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="col-md-4">
-          <label for="firstname" class="form-label">Nome</label>
-          <input type="text" id="firstname" class="form-control">
+        <hr class="text-light">
+        <div class="col- m-3 p-3 d-flex justify-content-center">
+          <a href="https://www.booking.com" class="partner-button booking">
+            <img src="/imagesnew/Booking-Logo.png" alt="Booking.com" width="30" height="30"> Booking.com
+          </a>
+          <a href="https://www.airbnb.com" class="partner-button airbnb">
+            <img src="/imagesnew/airbnb.jpg" alt="Airbnb" width="30" height="30"> Airbnb
+          </a>
         </div>
-        <div class="col-md-5">
-          <label for="lastname" class="form-label">Cognome</label>
-          <input type="text" id="lastname" class="form-control">
+        <div class="d-flex flex-column flex-sm-row justify-content-center py-3 my-4">
+          <p class="text-light fw-light">Copyright &copy; 2024 Sa Corte Antiga Inc. Tutti i diritti riservati</p>
         </div>
-      </div>
-
-      <div class="row mb-3">
-        <div class="col-md-6">
-          <label for="e-mail" class="form-label">Email</label>
-          <input type="email" id="e-mail" class="form-control">
-        </div>
-        <div class="col-md-6">
-          <label for="phone" class="form-label">Numero di telefono</label>
-          <input type="text" id="phone" class="form-control">
-        </div>
-      </div>
-
-      <div class="row mb-3">
-        <div class="col-md-4">
-          <label for="numofguests" class="form-label">Numero di ospiti</label>
-          <select id="numofguests" class="form-select">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-          </select>
-        </div>
-        <div class="col-md-4">
-          <label for="numofkids" class="form-label">Bambini sotto i 6 anni</label>
-          <select id="numofkids" class="form-select">
-            <option>0</option>
-            <option>1</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="row mb-3">
-        <div class="col-md-6">
-          <label for="arrivalDate" class="form-label">Data di arrivo</label>
-          <input type="text" id="arrivalDate" class="form-control">
-        </div>
-        <div class="col-md-6">
-          <label for="departureDate" class="form-label">Data di partenza</label>
-          <input type="text" id="departureDate" class="form-control">
-        </div>
-      </div>
-
-      <div class="text-center my-3">
-        <button type="button" class="btn btn-outline-success me-2" onclick="GetPrice()">Calcola il prezzo</button>
-        <button type="button" class="btn btn-outline-success" onclick="sendEmail()">Richiedi la prenotazione</button>
-      </div>
-
-      <div class="text-center my-2">
-        <p id="totalPrice" class="fw-bold">Total Price: $0</p>
-        <p id="status" class="text-muted small"></p>
-      </div>
-    </form>
+      </footer>
+    </div>
   </div>
-</div>
 
+  <script src="javaexercise.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init();</script>
-    <script src="javaexercise.js"></script>
-
-  </body>
+</body>
 </html>
-
-
