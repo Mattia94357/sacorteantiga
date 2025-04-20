@@ -1,0 +1,90 @@
+<!-- Booking Form -->
+<div class="container my-5">
+    <div class="card shadow-lg border-0 p-4">
+      <div class="row">
+        <div class="col-12 text-center mb-3">
+          <h2>Modulo di prenotazione</h2>
+          <hr class="hr2">
+        </div>
+      </div>
+  
+      <div class="row mb-3">
+        <div class="col-md-3">
+          <label for="title" class="form-label my-2">Titolo</label>
+          <select name="Title" id="title" class="form-control my-2">
+            <option value="1">MR</option>
+            <option value="2">MS</option>
+            <option value="3">MRS</option>
+          </select>
+        </div>
+  
+        <div class="col-md-4">
+          <label for="firstname" class="form-label my-2">Nome</label>
+          <input type="text" id="firstname" class="form-control my-2">
+        </div>
+  
+        <div class="col-md-5">
+          <label for="lastname" class="form-label my-2">Cognome</label>
+          <input type="text" id="lastname" class="form-control my-2">
+        </div>
+      </div>
+  
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="e-mail" class="form-label my-2">E-Mail</label>
+          <input type="email" id="e-mail" class="form-control my-2">
+        </div>
+  
+        <div class="col-md-6">
+          <label for="phone number" class="form-label my-2">Numero di telefono</label>
+          <input type="text" id="phone number" class="form-control my-2">
+        </div>
+      </div>
+  
+      <div class="row mb-3">
+        <div class="col-md-4">
+          <label for="numofguests" class="form-label my-2">Numero di ospiti</label>
+          <select name="" type="number" id="numofguests" class="form-control my-2">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+  
+        <div class="col-md-4">
+          <label for="numofkids" class="form-label my-2">Numero di bambini sotto i 6 anni ( 1 bambino allogia gratis!)</label>
+          <select class="form-control my-2" name="" id="numofkids">
+            <option value="0">0</option>
+            <option value="1">1</option>
+          </select>
+        </div>
+      </div>
+  
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="arrivalDate" class="form-label my-2">Data di arrivo</label>
+          <input type="text" id="arrivalDate" class="form-control my-2">
+        </div>
+  
+        <div class="col-md-6">
+          <label for="departureDate" class="form-label my-2">Data di partenza</label>
+          <input type="text" id="departureDate" class="form-control my-2">
+        </div>
+      </div>
+  
+      <div class="row my-4 text-center">
+        <div class="col-md-6 mb-3">
+          <button role="button" class="btn btn-outline-success w-100" onclick="GetPrice()">Calcola il prezzo</button>
+        </div>
+        <div class="col-md-6">
+          <button role="button" class="btn btn-outline-success w-100" onclick="sendEmail()">Richiedi la prenotazione</button>
+        </div>
+      </div>
+  
+      <div class="text-center">
+        <p id="totalPrice" class="my-2 fw-bold">Total Price: $0</p>
+        <p id="status" class="text-muted"></p>
+      </div>
+    </div>
+  </div>
+  
