@@ -251,6 +251,13 @@ p {
     margin-right: 10px;
 }
 
+.footer-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
 .partner-button {
   padding: 0.5rem 1rem;
   min-width: 160px;
@@ -261,6 +268,7 @@ p {
   text-decoration: none;
   font-weight: 500;
   transition: background-color 0.3s ease;
+  margin: 0 10px;
 }
 
 .partner-button img {
